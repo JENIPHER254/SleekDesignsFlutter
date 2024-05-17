@@ -18,6 +18,14 @@ class _HomeScreenState extends State<HomeScreen> {
     "pizza5",
     "pizza3",
   ];
+  List<String> pizza2 = [
+    "pizza2",
+    "pizza3",
+    "pizza4",
+    "pizza1",
+    "pizza5",
+    
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -128,7 +136,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         flex: 3, child: small_text("Categories", Colors.black)),
                     Expanded(
                       flex: 1,
-                      child: small_text("See more", Colors.red),
+                      child: small_text("See more...", Colors.red),
                     ),
                   ],
                 ),
@@ -137,7 +145,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 200,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
-                  itemCount: 5,
+                  itemCount: pizza.length,
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
                     return Container(
@@ -147,6 +155,38 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: Image(
                               image: AssetImage(
                                   "assets/images/${pizza[index]}.jpg"))),
+                    );
+                  },
+                ),
+              ),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10),
+                child: Row(
+                  children: [
+                    Expanded(
+                        flex: 3, child: small_text("Popular", Colors.black)),
+                    Expanded(
+                      flex: 1,
+                      child: small_text("See more...", Colors.red),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 200,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: pizza2.length,
+                  shrinkWrap: true,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      margin: EdgeInsets.all(15),
+                      child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: Image(
+                              image: AssetImage(
+                                  "assets/images/${pizza2[index]}.jpg"))),
                     );
                   },
                 ),
