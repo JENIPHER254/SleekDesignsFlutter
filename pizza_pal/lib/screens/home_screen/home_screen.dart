@@ -2,8 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:pizza_pal/widgets/italic_text/italic_text.dart';
 import 'package:pizza_pal/widgets/large_text/large_text.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  List pizza = [
+    "pizza1",
+    "pizza2",
+    "pizza3",
+    "pizza4",
+    "pizza5",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -104,7 +117,7 @@ class HomeScreen extends StatelessWidget {
                     image: AssetImage('assets/images/banner2.jpg'),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),
