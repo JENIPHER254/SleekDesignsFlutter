@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pizza_pal/widgets/italic_text/italic_text.dart';
 import 'package:pizza_pal/widgets/large_text/large_text.dart';
+import 'package:pizza_pal/widgets/small_text/small_text.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -10,12 +11,12 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  List pizza = [
+  List<String> pizza = [
     "pizza1",
     "pizza2",
-    "pizza3",
     "pizza4",
     "pizza5",
+    "pizza3",
   ];
 
   @override
@@ -118,6 +119,38 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 20.0, horizontal: 10),
+                child: Row(
+                  children: [
+                    Expanded(
+                        flex: 3, child: small_text("Categories", Colors.black)),
+                    Expanded(
+                      flex: 1,
+                      child: small_text("See more", Colors.red),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 200,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 5,
+                  shrinkWrap: true,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      margin: EdgeInsets.all(15),
+                      child: ClipRRect(
+                          borderRadius: BorderRadius.circular(12),
+                          child: Image(
+                              image: AssetImage(
+                                  "assets/images/${pizza[index]}.jpg"))),
+                    );
+                  },
+                ),
+              )
             ],
           ),
         ),
