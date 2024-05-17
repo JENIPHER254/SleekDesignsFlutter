@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:pizza_pal/widgets/italic_text/italic_text.dart';
 import 'package:pizza_pal/widgets/large_text/large_text.dart';
+import 'package:pizza_pal/widgets/main_button/main_button.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -23,6 +24,13 @@ class WelcomeScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(18.0),
                   child: italic_text(
                       "Order food and get delivery within a few minutes to your door"),
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                  width: double.infinity,
+                  child: main_button("Get Started ...", () {
+                    Navigator.pushNamed(context, 'home');
+                  }),
                 )
               ],
             ),
