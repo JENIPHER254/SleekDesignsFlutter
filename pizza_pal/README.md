@@ -16,4 +16,7 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 ## Project UI designs
-| ![plot](./assets/images/Screenshot%202024-05-18%20011646.png) | ![plot](./assets/images/Screenshot%202024-05-18%20011722.png) | ![plot](./assets/images/Screenshot%202024-05-18%20011752.png)|
+
+| Section 1                                                     | Section 2                                                     | Section 3                                                     |
+| ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![plot](./assets/images/Screenshot%202024-05-18%20011646.png) | ![plot](./assets/images/Screenshot%202024-05-18%20011722.png) | ![plot](./assets/images/Screenshot%202024-05-18%20011752.png) |
