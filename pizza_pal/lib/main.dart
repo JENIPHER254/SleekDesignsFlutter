@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:pizza_pal/screens/home_screen/home_screen.dart';
 import 'package:pizza_pal/screens/welcome_screen/welcome_screen.dart';
 
 void main() {
   runApp(MaterialApp(
-
-    initialRoute: '/',
-
-    routes: {
-      '/':(context) => WelcomeScreen()
-    },
-  ));
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => WelcomeScreen(),
+        'home': (context) => HomeScreen()
+      }));
 }
