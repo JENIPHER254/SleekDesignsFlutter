@@ -8,6 +8,6 @@ void main() {
       initialRoute: '/',
       routes: {
         '/': (context) => WelcomeScreen(),
-        'home': (context) => HomeScreen()
+        '/home': (context) => HomeScreen()
       }));
 }

@@ -29,7 +29,7 @@ class WelcomeScreen extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                   width: double.infinity,
                   child: main_button("Get Started ...", () {
-                    Navigator.pushNamed(context, 'home');
+                    Navigator.pushNamed(context, '/home');
                   }),
                 )
               ],

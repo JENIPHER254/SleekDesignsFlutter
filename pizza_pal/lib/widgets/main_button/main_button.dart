@@ -4,7 +4,7 @@ ElevatedButton main_button(String text, Function action) {
   return ElevatedButton(
     style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
     onPressed: () {
-      action;
+      action();
     },
     child: Padding(
       padding: const EdgeInsets.all(18.0),
