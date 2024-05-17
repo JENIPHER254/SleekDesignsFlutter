@@ -8,4 +8,4 @@ This Project offers a curated repository of captivating Flutter websites and des
 
 | Section 1                                                     | Section 2                                                     | Section 3                                                     |
 | ------------------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------- |
-| ![plot](./assets/images/Screenshot%202024-05-18%20011646.png) | ![plot](./assets/images/Screenshot%202024-05-18%20011722.png) | ![plot](./assets/images/Screenshot%202024-05-18%20011752.png) |
+| ![plot](./pizza_pal/assets/images/Screenshot%202024-05-18%20011646.png) | ![plot](./pizza_pal/assets/images/Screenshot%202024-05-18%20011722.png) | ![plot](./pizza_pal/assets/images/Screenshot%202024-05-18%20011752.png) |
