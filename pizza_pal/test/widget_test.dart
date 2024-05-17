@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:pizza_pal/screens/welcome_screen.dart';
+import 'package:pizza_pal/screens/welcome_screen/welcome_screen.dart';
 
 
 void main() {
