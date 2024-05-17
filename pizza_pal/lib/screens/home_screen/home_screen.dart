@@ -24,7 +24,6 @@ class _HomeScreenState extends State<HomeScreen> {
     "pizza4",
     "pizza1",
     "pizza5",
-    
   ];
 
   @override
@@ -148,13 +147,18 @@ class _HomeScreenState extends State<HomeScreen> {
                   itemCount: pizza.length,
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
-                    return Container(
-                      margin: EdgeInsets.all(15),
-                      child: ClipRRect(
-                          borderRadius: BorderRadius.circular(12),
-                          child: Image(
-                              image: AssetImage(
-                                  "assets/images/${pizza[index]}.jpg"))),
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/single');
+                      },
+                      child: Container(
+                        margin: EdgeInsets.all(15),
+                        child: ClipRRect(
+                            borderRadius: BorderRadius.circular(12),
+                            child: Image(
+                                image: AssetImage(
+                                    "assets/images/${pizza[index]}.jpg"))),
+                      ),
                     );
                   },
                 ),
@@ -180,13 +184,18 @@ class _HomeScreenState extends State<HomeScreen> {
                   itemCount: pizza2.length,
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
-                    return Container(
-                      margin: EdgeInsets.all(15),
-                      child: ClipRRect(
-                          borderRadius: BorderRadius.circular(12),
-                          child: Image(
-                              image: AssetImage(
-                                  "assets/images/${pizza2[index]}.jpg"))),
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/single');
+                      },
+                      child: Container(
+                        margin: EdgeInsets.all(15),
+                        child: ClipRRect(
+                            borderRadius: BorderRadius.circular(12),
+                            child: Image(
+                                image: AssetImage(
+                                    "assets/images/${pizza2[index]}.jpg"))),
+                      ),
                     );
                   },
                 ),
