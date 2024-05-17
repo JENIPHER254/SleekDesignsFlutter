@@ -6,7 +6,7 @@ Text large_text(String text) {
     style: TextStyle(
       color: Colors.black,
       fontSize: 24,
-      fontWeight: FontWeight.bold
+      fontWeight: FontWeight.w900,
     ),
   );
 }
