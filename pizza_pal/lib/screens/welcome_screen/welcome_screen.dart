@@ -21,12 +21,13 @@ class WelcomeScreen extends StatelessWidget {
                 Image(image: AssetImage('assets/images/delivery1.jpg')),
                 large_text("Order Your Food Now!"),
                 Padding(
-                  padding: const EdgeInsets.all(18.0),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 35.0, vertical: 10),
                   child: italic_text(
-                      "Order food and get delivery within a few minutes to your door"),
+                      "Order food and get delivery within a few minutes to your door..."),
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                  padding: EdgeInsets.symmetric(horizontal: 55, vertical: 10),
                   width: double.infinity,
                   child: main_button("Get Started ...", () {
                     Navigator.pushNamed(context, '/home');

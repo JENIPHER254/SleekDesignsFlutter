@@ -6,7 +6,7 @@ Text italic_text(String text) {
     text,
     style: TextStyle(
       color: Colors.grey,
-      fontSize: 18,
+      fontSize: 15,
       fontStyle: FontStyle.italic,
     ),
   );

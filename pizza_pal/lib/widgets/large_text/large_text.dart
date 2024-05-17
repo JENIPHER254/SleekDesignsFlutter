@@ -5,7 +5,7 @@ Text large_text(String text) {
     text,
     style: TextStyle(
       color: Colors.black,
-      fontSize: 24,
+      fontSize: 22,
       fontWeight: FontWeight.w900,
     ),
   );
